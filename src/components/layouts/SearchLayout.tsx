@@ -21,6 +21,8 @@ interface SearchLayoutProps {
   showSeparator?: boolean;
   header: React.ReactNode;
   searchBox: React.ReactNode;
+  movieBoxCarousel: React.ReactNode;
+  //popular: React.ReactNode;
   list: React.ReactNode;
   footer: React.ReactNode;
 }
@@ -30,7 +32,9 @@ function SearchLayout(props: SearchLayoutProps) {
     showSeparator = true,
     header,
     searchBox,
+    //popular
     list,
+    movieBoxCarousel,
     footer,
   } = props;
 
@@ -38,6 +42,8 @@ function SearchLayout(props: SearchLayoutProps) {
     <div style={{ ...baseLayoutStyle, ...style }}>
       {header}
       <Main>
+        {movieBoxCarousel}
+        {showSeparator && <Separator />}
         {searchBox}
         {showSeparator && <Separator />}
         {list}

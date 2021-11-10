@@ -53,3 +53,24 @@ export interface Genre {
   id: number;
   name: string;
 }
+
+export interface Popular {
+  posterPath: string | null;
+  backdropPath: string | null;
+  genreIds: number[];
+  id: number;
+  adult:boolean;
+  mediaType: string;
+  originalTitle: string;
+  originalLanguage: string;
+  originalName: string;
+  overview: string;
+  title: string;
+  popularity: number;
+  firstAirDate: string;
+  releaseDate: string;
+  name: string;
+  video: boolean;
+  voteAverage: number;
+  voteCount: number;
+}

@@ -18,7 +18,7 @@ function MovieBoxList(props: MovieBoxListProps) {
   return (
     <div style={movieBoxListContainerStyle}>
       {movies.map(m => (
-        <MovieBox key={m.id} genres={genres} movie={m} />
+        <MovieBox key={m.id} movie={m} genres={genres} />
       ))}
       {didSearch && movies.length === 0 && (
         <Subtitle level={3}>

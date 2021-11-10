@@ -53,7 +53,7 @@ function MovieBox(props: MovieBoxProps) {
     const genresFound = ids
       .map(id => genres.find(g => g.id === id))
       .filter(Boolean) as Genre[];
-    return genresFound.map(genre => genre.name).join(', ');
+    return genresFound.map(genres => genres.name).join(', ');
   }
 
   return (

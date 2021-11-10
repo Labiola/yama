@@ -3,6 +3,7 @@ import React from 'react';
 const mainStyle = {
   flex: 1,
 };
+
 const Main = ({ children }: { children: React.ReactNode }) => (
   <main style={mainStyle} className="section">
     {children}
