@@ -29,7 +29,7 @@ const titleMovie = {
 
 const ContainerImage = styled.div`
   float: left;
-  margin-right: 20px;
+  padding-left:55px;
 
   @media (min-width: 800px) {
     float: none;
@@ -55,7 +55,7 @@ function MovieBoxCarousel(props: MovieBoxCarouselProps) {
           />
         </ContainerImage>
       </InfoContainer>
-      <Title style={titleMovie} level={1} size={5} alignment="left">
+      <Title style={titleMovie} level={1} size={5} alignment="center">
         {popular.title} ({popular.releaseDate.slice(0, 4)})
       </Title>
     </BoxList>
